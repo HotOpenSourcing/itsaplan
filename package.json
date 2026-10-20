@@ -17,9 +17,9 @@
   "private": true,
   "scripts": {
     "setup": "bun scripts/setup.ts",
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "start": "turbo run start",
+    "dev": "node init && turbo run dev",
+    "build": "node init && turbo run build",
+    "start": "node init && turbo run start",
     "lint": "turbo run lint",
     "format": "prettier . --write",
     "format:check": "prettier . --check",

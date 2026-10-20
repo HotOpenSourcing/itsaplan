@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --env-file=../../.env run --watch src/index.ts",
-    "start": "bun run src/index.ts",
+    "dev": "node init && bun --env-file=../../.env run --watch src/index.ts",
+    "start": "node init && bun run src/index.ts",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "bun test --env-file=../../.env.test"
